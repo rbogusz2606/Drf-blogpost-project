@@ -20,20 +20,20 @@ Co oznaczają URL:
 https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com//blogposts/ - Metoda post dodaje Twój post, aby dodać wpisz np. {"title" : "example", "content" : "example", "Categories" : "Sport"}.
 Metoda Get wyświetla wszystkie posty.
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/blogposts/&lt;uuid:pk&gt;/ - Wyświetla post po wpisaniu uuid w polu "&lt;uuid:pk&gt;". Można wykonać metodę GET,PUT,DELETE, jeżeli jesteś autorem postu, lub superuserem.
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/blogposts/uuid:pk/ - Wyświetla post po wpisaniu uuid w polu "uuid:pk". Można wykonać metodę GET,PUT,DELETE, jeżeli jesteś autorem postu, lub superuserem.
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/comment/ - Wyświetla komentarze, oraz można dodac komentarz np: {"blog_post" : "<uuid>", "content" : "example"}.
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/comment/ - Wyświetla komentarze, oraz można dodac komentarz np: {"blog_post" : "uuid", "content" : "example"}.
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/comment/&lt;uuid:pk&gt;/ - Wyświetla komentarz po wpisaniu uuid w polu "&lt;uuid:pk&gt;". Można wykonać metodę GET,PUT,DELETE, jeżeli jesteś autorem postu, lub superuserem.
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/comment/;uuid:pk;/ - Wyświetla komentarz po wpisaniu uuid w polu "uuid:pk". Można wykonać metodę GET,PUT,DELETE, jeżeli jesteś autorem postu, lub superuserem.
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/like/ - Metoda GET wyświetla lajki użytkowników. Metoda POST możesz dać swojego lajka do posta wpisując {"blog_post" : "<uuid>"}
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/like/ - Metoda GET wyświetla lajki użytkowników. Metoda POST możesz dać swojego lajka do posta wpisując {"blog_post" : "uuid"}
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/like/&lt;int:pk&gt;/delete/ - Usuwanie swojego lajka, bądź lajków innych użytkowników, jeżeli jestes superuserem.
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/like/int:pk/delete/ - Usuwanie swojego lajka, bądź lajków innych użytkowników, jeżeli jestes superuserem.
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/post_filter_by/&lt;str:category_name&gt;/- Wyświetla posty po danej kategorii np: Sport, Finances, Adventures
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/post_filter_by/str:category_name/- Wyświetla posty po danej kategorii np: Sport, Finances, Adventures
 
 LOGOUT:
 
-https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/logout/ - Metodą POST : {"refresh" : "&lt;refresh token&gt;"} możesz się wylogować.
+https://blogpost-api-project-rb-795ff4c0aa1e.herokuapp.com/logout/ - Metodą POST : {"refresh" : "refresh token"} możesz się wylogować.
 
 
