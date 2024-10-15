@@ -1,0 +1,54 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+brudnopis.txt
+# Virtualenv
+venv/
+env/
+
+# Django specific
+db.sqlite3
+*.log
+media/
+static/
+staticfiles/
+*.pot
+*.py[cod]
+*_cache/
+cache/
+*.mo
+
+# If you are using PostgreSQL locally, exclude this too
+*.pgsql
+
+# Ignore .env file for security reasons (it may contain sensitive data)
+.env
+
+# macOS specific
+.DS_Store
+
+# VSCode specific
+.vscode/
+
+# PyCharm specific
+.idea/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+
+# Logs and temp files
+*.log
+*.pot
+local_settings.py
