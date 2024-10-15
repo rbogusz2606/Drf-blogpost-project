@@ -15,8 +15,8 @@ from django.shortcuts import get_object_or_404
 @permission_classes([IsAuthenticated])
 @api_view(['GET'])
 def endpoints(request):
-    return Response ("/blogposts/ , /blogposts/<uuid:pk>/, /signup/, /login/, /token/', /token/refresh/, /category, /comment/, comment/<uuid:pk>/, /like/, /like/<int:pk>/delete/ /post_by/<str:category_name>/")
-
+    return Response ("/blogposts/ , /blogposts/<uuid:pk>/, /signup/, /login/, /token/', /token/refresh/, /comment/, comment/<uuid:pk>/, /like/, /like/<int:pk>/delete/ , /post_filter_by/<str:category_name>/, NAZWY KATEGORII: Sport, Finances, Adventures")
+    
 class CustomPagination(PageNumberPagination):
     page_size = 5
     page_size_query_param = 'page_size'
